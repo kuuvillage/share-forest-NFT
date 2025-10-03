@@ -2,10 +2,12 @@
 src = "src"
 out = 'artifacts/foundry'
 cache_path = 'cache/foundry'
-libs = ["lib"]
+libs = ["lib", "dependencies"]
 optimizer = true
 optimizer_runs = 20_000
 auto_detect_remappings = false
 
 [profile.ci]
 verbosity = 4
+
+[dependencies]
